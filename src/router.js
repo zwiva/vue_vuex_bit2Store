@@ -13,8 +13,7 @@ export default new Router({
   routes: [
     {
       path: "/",
-      name: "Inicio",
-      component: Inicio,
+      redirect: "Inicio",
     },
     {
       path: "",
@@ -22,7 +21,9 @@ export default new Router({
     },
     {
       path: "/inicio",
-      redirect: "Inicio",
+      name: "Inicio",
+      component: Inicio,
+      alias: ["/home"],
     },
     {
       path: "/busquedas",
@@ -38,6 +39,10 @@ export default new Router({
       path: "/total",
       name: "Total",
       component: Total,
+    },
+    {
+      path: "*",
+      redirect: "Inicio",
     },
   ],
 });
