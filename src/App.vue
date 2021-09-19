@@ -37,8 +37,9 @@ p {
 }
 main {
   margin: 0 auto;
-  max-width: 720px;
   text-align: center;
+  width: 90%;
+  max-width: 720px;
 }
 .vista-enter-active,
 .vista-leave-active {
